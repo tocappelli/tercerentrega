@@ -1,0 +1,33 @@
+$fondotransparente:linear-gradient(rgba(5,7,12,0.20), rgba(5,7,12,0.20)); 
+$colorparrafo: #a3a3a3;
+$colorhover: gray;
+$fontprincipal: 'Bebas Neue', cursive;
+$fontsecundaria: 'Caudex', serif;
+$negro: rgb(22, 22, 22);
+$blanco: white;
+
+.bodygaleria{
+  background-color: rgb(22, 22, 22);
+}
+.filmgaleria{
+  @extend .filmquiensoy
+}
+.nombregaleria{
+  @extend .nombrequiensoy
+}
+.fotosgaleria{
+  @extend .fotosquiensoy
+}
+.hoverimg:hover{
+  transform: scale(0.95);
+  
+}
+.hoverimg{
+  transition: 0.5s;
+  object-fit: cover;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+  
+}
+.modal-content img{
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}  

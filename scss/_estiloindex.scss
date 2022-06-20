@@ -1,0 +1,131 @@
+$fondotransparente:linear-gradient(rgba(5,7,12,0.20), rgba(5,7,12,0.20)); 
+$colorparrafo: #a3a3a3;
+$colorhover: gray;
+$fontprincipal: 'Bebas Neue', cursive;
+$fontsecundaria: 'Caudex', serif;
+$negro: #040404;
+$blanco: white;
+
+.bodyindex{
+  background-image: url(../img/fondo.jpg);
+  position: fixed;
+  top:0;
+}
+
+.navbar-toggler-icon{
+  border-radius: 120px;
+  width: 50px;
+  height: 60px;
+  background-image: url(../img/ojo.png);
+}
+.odcnav{
+  list-style: none;
+  text-decoration: none;
+  color: $blanco;
+  font-family: $fontsecundaria;
+  font-size: 4rem;
+}
+.odcnav:hover{
+  color: $colorhover;
+}
+.offcanvas{
+  background: $fondotransparente;
+  
+}
+@media only screen and (max-width: 600px){
+  .offcanvas{
+    background-color: $negro;
+    }
+}
+
+.logo{
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  grid-template-rows: repeat(8, 1fr)
+}
+.elojo{
+  font-family: $fontprincipal;
+  font-size: 11.5rem;
+  color: $blanco;
+  line-height: normal;
+  grid-column: 1/4;
+  grid-row: 2;
+}
+.elojoabrevidado{
+  font-family: $fontprincipal;
+  font-size: 8rem;
+  color: $blanco; 
+  line-height: normal;
+  grid-column: 2/4;
+  grid-row: 3;
+  display: none;
+}
+@media only screen and (max-width: 1350px){
+  .elojo {
+    font-size: 7rem;
+    grid-row: 4;
+    
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .elojo{
+    font-size: 3rem;
+    grid-column: 1;
+    grid-row: 7;
+    display: none;
+  }
+  .elojoabrevidado{
+    display: inline;
+  }
+}
+/*animaciones logo index*/
+.focus-in-expand {
+  animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.offcanvas-header h5{
+  font-size: 5rem;
+  color: $blanco;
+  font-family: $fontsecundaria;
+}
+.nav-link{
+  color: $blanco;
+  font-family: $fontsecundaria;
+  font-size: 3rem;
+}
+.dropdown-menu{
+  background: $fondotransparente;
+}
+.dropdown-item{
+  font-size: 1.5rem;
+  font-family: $fontprincipal;
+  color: $blanco;
+}

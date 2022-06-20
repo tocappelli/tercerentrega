@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant:wght@300&family=Julius+Sans+One&family=Poppins:wght@500&display=swap");
+.bodyindex {
+  background-image: url(../img/fondo.jpg);
+  position: fixed;
+  top: 0; }
+
+.navbar-toggler-icon {
+  border-radius: 120px;
+  width: 50px;
+  height: 60px;
+  background-image: url(../img/ojo.png); }
+
+.odcnav {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  font-family: "Caudex", serif;
+  font-size: 4rem; }
+
+.odcnav:hover {
+  color: gray; }
+
+.offcanvas {
+  background: linear-gradient(rgba(5, 7, 12, 0.2), rgba(5, 7, 12, 0.2)); }
+
+@media only screen and (max-width: 600px) {
+  .offcanvas {
+    background-color: #040404; } }
+
+.logo {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr); }
+
+.elojo {
+  font-family: "Bebas Neue", cursive;
+  font-size: 11.5rem;
+  color: white;
+  line-height: normal;
+  grid-column: 1/4;
+  grid-row: 2; }
+
+.elojoabrevidado {
+  font-family: "Bebas Neue", cursive;
+  font-size: 8rem;
+  color: white;
+  line-height: normal;
+  grid-column: 2/4;
+  grid-row: 3;
+  display: none; }
+
+@media only screen and (max-width: 1350px) {
+  .elojo {
+    font-size: 7rem;
+    grid-row: 4; } }
+
+@media only screen and (max-width: 600px) {
+  .elojo {
+    font-size: 3rem;
+    grid-column: 1;
+    grid-row: 7;
+    display: none; }
+  .elojoabrevidado {
+    display: inline; } }
+
+/*animaciones logo index*/
+.focus-in-expand {
+  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+.offcanvas-header h5 {
+  font-size: 5rem;
+  color: white;
+  font-family: "Caudex", serif; }
+
+.nav-link {
+  color: white;
+  font-family: "Caudex", serif;
+  font-size: 3rem; }
+
+.dropdown-menu {
+  background: linear-gradient(rgba(5, 7, 12, 0.2), rgba(5, 7, 12, 0.2)); }
+
+.dropdown-item {
+  font-size: 1.5rem;
+  font-family: "Bebas Neue", cursive;
+  color: white; }
+
+.bodyquiensoy {
+  background-color: #161616; }
+  .bodyquiensoy * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; }
+
+.filmquiensoy, .fotosquiensoy, .fotosgaleria, .fotosfilm, .filmgaleria, .filmfilm {
+  text-decoration: none;
+  color: white;
+  font-family: "Caudex", serif;
+  list-style: none;
+  font-size: 1rem;
+  line-height: 120px;
+  opacity: 50%; }
+
+@media only screen and (max-width: 600px) {
+  .filmquiensoy, .fotosquiensoy, .fotosgaleria, .fotosfilm, .filmgaleria, .filmfilm {
+    font-size: 0.5rem; } }
+
+.filmquiensoy:hover, .fotosquiensoy:hover, .fotosgaleria:hover, .fotosfilm:hover, .filmgaleria:hover, .filmfilm:hover {
+  color: gray; }
+
+.nombrequiensoy, .nombregaleria, .nombrefilm {
+  text-decoration: none;
+  color: white;
+  font-family: "Caudex", serif;
+  list-style: none;
+  font-size: 3rem;
+  line-height: 120px;
+  font-weight: 500px;
+  border-color: transparent;
+  border-style: solid;
+  text-align: center; }
+
+@media only screen and (max-width: 600px) {
+  .nombrequiensoy, .nombregaleria, .nombrefilm {
+    font-size: 2rem;
+    line-height: 150px; } }
+
+.nombrequiensoy:hover, .nombregaleria:hover, .nombrefilm:hover {
+  color: gray; }
+
+.fotosquiensoy:hover, .fotosgaleria:hover, .fotosfilm:hover {
+  color: gray; }
+
+.parrafoquiensoy {
+  color: #a3a3a3;
+  font-family: "Caudex", serif;
+  font-size: 25px;
+  line-height: 2; }
+
+.instaquiensoy {
+  text-decoration: none;
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  list-style: none;
+  font-weight: 500px;
+  border-color: transparent;
+  border-style: solid; }
+
+.instaquiensoy:hover {
+  color: gray; }
+
+.behancequiensoy {
+  text-decoration: none;
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  list-style: none;
+  font-weight: 500px;
+  border-color: transparent;
+  border-style: solid; }
+
+.behancequiensoy:hover {
+  color: gray; }
+
+.firmaquiensoy {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Caudex", serif; }
+
+.firmaquiensoy:hover {
+  color: gray; }
+
+.firmaquiensoyh2 {
+  font-size: 1rem;
+  font-family: "Caudex", serif; }
+
+.parrafoquiensoy img {
+  max-width: 500px;
+  max-height: 650px; }
+
+@media only screen and (max-width: 800px) {
+  .parrafoquiensoy img {
+    display: none; }
+  .parrafoquiensoy {
+    color: #a3a3a3;
+    font-family: "Caudex", serif;
+    font-size: 15px;
+    line-height: 2;
+    text-align: center; } }
+
+.footerquiensoy {
+  color: #a3a3a3;
+  font-family: "Caudex", serif;
+  font-size: 15px;
+  line-height: 1.2;
+  margin-top: 20px; }
+
+/*animaciones*/
+.bodygaleria {
+  background-color: #161616; }
+
+.hoverimg:hover {
+  transform: scale(0.95); }
+
+.hoverimg {
+  transition: 0.5s;
+  object-fit: cover;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px; }
+
+.modal-content img {
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px; }
+
+.bodyfilm {
+  background-color: black; }
+
+.containier img {
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px; }
+
+.bodycontacto {
+  background: #161616;
+  color: white;
+  line-height: 1.6;
+  font-family: "Caudex", serif;
+  padding: 0 1.5em; }
+
+.contacto {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+.contact-contenido {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3); }
+
+.contact-contenido > * {
+  padding: 1em; }
+
+.contact-form {
+  background-image: url(../img/tablas.jpg);
+  background-size: cover;
+  max-width: 100%;
+  max-height: 100%;
+  background-repeat: no-repeat; }
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.contact-form form label {
+  display: block; }
+
+.contact-form form p {
+  margin: 0;
+  padding: 1em; }
+
+.contact-form form .block {
+  grid-column: 1 / 3; }
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: .7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #ffffff; }
+
+.contact-form form button {
+  background: linear-gradient(rgba(5, 7, 12, 0.2), rgba(5, 7, 12, 0.2));
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em; }
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background: #ffffff;
+  color: black;
+  transition: background-color 1s ease-out;
+  outline: 0; }
+
+/* CONTACT INFO */
+.contact-info {
+  background: #000; }
+
+.contact-info h4, .contact-info ul, .contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0; }
+
+/* LARGE SIZE */
+@media (min-width: 700px) {
+  body {
+    padding: 0 4em; }
+  .contact-contenido {
+    display: grid;
+    grid-template-columns: 2fr 1fr; }
+  .contact-contenido > * {
+    padding: 2em; }
+  .contact-info h4, .contact-info ul, .contact-info p {
+    text-align: left; } }

@@ -1,0 +1,136 @@
+$fondotransparente:linear-gradient(rgba(5,7,12,0.20), rgba(5,7,12,0.20)); 
+$colorparrafo: #a3a3a3;
+$colorhover: gray;
+$fontprincipal: 'Bebas Neue', cursive;
+$fontsecundaria: 'Caudex', serif;
+$negro: rgb(22, 22, 22);
+$blanco: white;
+
+@mixin redes ($fontprincipal) {
+  text-decoration: none;
+  color: $blanco;
+  font-family: $fontprincipal;
+  list-style: none;
+  font-weight: 500px;
+  border-color: transparent;
+  border-style: solid;
+  }
+
+.bodyquiensoy{
+  background-color: $negro;
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
+.filmquiensoy{
+  text-decoration: none;
+  color: $blanco;
+  font-family: $fontsecundaria;
+  list-style: none;
+  font-size: 1rem;
+  line-height: 120px;
+  opacity: 50%;
+  
+}
+@media only screen and (max-width: 600px){
+  .filmquiensoy {
+    font-size: 0.5rem;
+    
+    }
+}
+.filmquiensoy:hover{
+  color: $colorhover;
+}
+.nombrequiensoy{
+text-decoration: none;
+color: $blanco;
+font-family: $fontsecundaria;
+list-style: none;
+font-size: 3rem;
+line-height: 120px;
+font-weight: 500px;
+border-color: transparent;
+border-style: solid;
+text-align: center;
+}
+@media only screen and (max-width: 600px){
+  .nombrequiensoy{
+    font-size: 2rem;
+    line-height: 150px;
+    }
+}
+.nombrequiensoy:hover{
+  color: $colorhover;
+}
+.fotosquiensoy {
+ @extend .filmquiensoy;
+}
+.fotosquiensoy:hover{
+  color: $colorhover;
+}
+.parrafoquiensoy  {
+color: $colorparrafo;
+font-family: $fontsecundaria;
+font-size: 25px;
+line-height: 2;
+
+}
+
+.instaquiensoy{
+@include redes ($fontprincipal);
+}
+.instaquiensoy:hover{
+  color: $colorhover;
+}
+.behancequiensoy{
+  @include redes ($fontprincipal);
+}
+.behancequiensoy:hover{
+  color: $colorhover;
+}
+.firmaquiensoy{
+  color: $blanco;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: $fontsecundaria;
+}
+.firmaquiensoy:hover{
+  color: $colorhover;
+}
+.firmaquiensoyh2{
+  font-size: 1rem;
+  font-family: $fontsecundaria;
+
+}
+.parrafoquiensoy img{
+  max-width: 500px;
+  max-height: 650px;
+}
+@media only screen and (max-width: 800px){
+  .parrafoquiensoy img{
+    display: none
+    }
+    .parrafoquiensoy {
+      color: $colorparrafo;
+      font-family: $fontsecundaria;
+      font-size: 15px;
+      line-height: 2;
+      text-align: center;
+     }
+     
+}
+.footerquiensoy  {
+  color: $colorparrafo;
+  font-family: $fontsecundaria;
+  font-size: 15px;
+  line-height: 1.2;
+  margin-top: 20px;
+  }
+/*animaciones*/
+
+
+
+
+
