@@ -110,10 +110,6 @@
 
 .bodyquiensoy {
   background-color: #161616; }
-  .bodyquiensoy * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box; }
 
 .filmquiensoy, .fotosquiensoy, .fotosgaleria, .fotosfilm, .filmgaleria, .filmfilm {
   text-decoration: none;
@@ -124,7 +120,7 @@
   line-height: 120px;
   opacity: 50%; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
   .filmquiensoy, .fotosquiensoy, .fotosgaleria, .fotosfilm, .filmgaleria, .filmfilm {
     font-size: 0.5rem; } }
 
@@ -143,7 +139,7 @@
   border-style: solid;
   text-align: center; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
   .nombrequiensoy, .nombregaleria, .nombrefilm {
     font-size: 2rem;
     line-height: 150px; } }
@@ -158,7 +154,8 @@
   color: #a3a3a3;
   font-family: "Caudex", serif;
   font-size: 25px;
-  line-height: 2; }
+  line-height: 2;
+  overflow: hidden; }
 
 .instaquiensoy {
   text-decoration: none;
@@ -199,9 +196,9 @@
 
 .parrafoquiensoy img {
   max-width: 500px;
-  max-height: 650px; }
+  height: auto; }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 992px) {
   .parrafoquiensoy img {
     display: none; }
   .parrafoquiensoy {
@@ -238,6 +235,15 @@
 
 .containier img {
   box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px; }
+
+@media only screen and (max-width: 600px) {
+  .elojo {
+    font-size: 3rem;
+    grid-column: 1;
+    grid-row: 7;
+    display: none; }
+  .elojoabrevidado {
+    display: inline; } }
 
 .bodycontacto {
   background: #161616;
@@ -326,3 +332,10 @@ ul {
     padding: 2em; }
   .contact-info h4, .contact-info ul, .contact-info p {
     text-align: left; } }
+
+.footercontacto {
+  color: #a3a3a3;
+  font-family: "Caudex", serif;
+  font-size: 15px;
+  line-height: 1.2;
+  margin-top: 20px; }

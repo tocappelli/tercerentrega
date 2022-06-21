@@ -18,11 +18,15 @@ $blanco: white;
 
 .bodyquiensoy{
   background-color: $negro;
-  *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+  // Estas propiedades están pisando las propiedades de la clase .container de Bootstrap, 
+  // y no debería ser asi! Nuna hay que sobreescribir ninguna clase de Bootsrap 
+  // porque el chiste es utilizar la libreria con las clases que ya vienen.
+
+  // *{
+  //   padding: 0;
+  //   margin: 0;
+  //   box-sizing: border-box;
+  // }
 }
 .filmquiensoy{
   text-decoration: none;
@@ -34,7 +38,7 @@ $blanco: white;
   opacity: 50%;
   
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 576px){//modifiqué los breakpoint para estar acorde a los breakpoints de Bootstrap https://getbootstrap.com/docs/5.0/layout/breakpoints/
   .filmquiensoy {
     font-size: 0.5rem;
     
@@ -55,7 +59,7 @@ border-color: transparent;
 border-style: solid;
 text-align: center;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 576px){//modifiqué los breakpoint para estar acorde a los breakpoints de Bootstrap https://getbootstrap.com/docs/5.0/layout/breakpoints/
   .nombrequiensoy{
     font-size: 2rem;
     line-height: 150px;
@@ -75,7 +79,7 @@ color: $colorparrafo;
 font-family: $fontsecundaria;
 font-size: 25px;
 line-height: 2;
-
+overflow: hidden;
 }
 
 .instaquiensoy{
@@ -106,9 +110,9 @@ line-height: 2;
 }
 .parrafoquiensoy img{
   max-width: 500px;
-  max-height: 650px;
+  height: auto;
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 992px){ //modifiqué los breakpoint para estar acorde a los breakpoints de Bootstrap https://getbootstrap.com/docs/5.0/layout/breakpoints/
   .parrafoquiensoy img{
     display: none
     }
@@ -129,8 +133,3 @@ line-height: 2;
   margin-top: 20px;
   }
 /*animaciones*/
-
-
-
-
-
