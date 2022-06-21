@@ -18,15 +18,7 @@ $blanco: white;
 
 .bodyquiensoy{
   background-color: $negro;
-  // Estas propiedades están pisando las propiedades de la clase .container de Bootstrap, 
-  // y no debería ser asi! Nuna hay que sobreescribir ninguna clase de Bootsrap 
-  // porque el chiste es utilizar la libreria con las clases que ya vienen.
-
-  // *{
-  //   padding: 0;
-  //   margin: 0;
-  //   box-sizing: border-box;
-  // }
+ 
 }
 .filmquiensoy{
   text-decoration: none;
