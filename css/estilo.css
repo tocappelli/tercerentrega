@@ -150,7 +150,7 @@
 .fotosquiensoy:hover, .fotosgaleria:hover, .fotosfilm:hover {
   color: gray; }
 
-.parrafoquiensoy {
+.parrafoquiensoy, .parrafohornocal p {
   color: #a3a3a3;
   font-family: "Caudex", serif;
   font-size: 25px;
@@ -194,14 +194,14 @@
   font-size: 1rem;
   font-family: "Caudex", serif; }
 
-.parrafoquiensoy img {
+.parrafoquiensoy img, .parrafohornocal p img {
   max-width: 500px;
   height: auto; }
 
 @media only screen and (max-width: 992px) {
-  .parrafoquiensoy img {
+  .parrafoquiensoy img, .parrafohornocal p img {
     display: none; }
-  .parrafoquiensoy {
+  .parrafoquiensoy, .parrafohornocal p {
     color: #a3a3a3;
     font-family: "Caudex", serif;
     font-size: 15px;
@@ -229,6 +229,17 @@
 
 .modal-content img {
   box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px; }
+
+.dropdown-toggle {
+  border-radius: 0; }
+
+#dropdownCenterBtn {
+  font-family: "Caudex", serif;
+  font-size: 1.5rem; }
+
+#pedia {
+  font-family: "Caudex", serif;
+  font-size: 18px; }
 
 .bodyfilm {
   background-color: black; }
@@ -339,3 +350,41 @@ ul {
   font-size: 15px;
   line-height: 1.2;
   margin-top: 20px; }
+
+.imghornocal img {
+  max-width: 100%;
+  max-height: 100%; }
+
+.imghornocal {
+  padding-top: 80px; }
+
+.parrafohornocal p {
+  overflow: hidden;
+  padding-top: 25px; }
+
+.titulohornocal {
+  font-size: 3rem;
+  font-family: "Caudex", serif;
+  color: white;
+  overflow: hidden;
+  padding-bottom: 25px; }
+
+#carouselExampleControls {
+  overflow: hidden; }
+
+/*media query*/
+@media only screen and (max-width: 576px) {
+  .titulohornocal {
+    font-size: 1.5rem; } }
+
+@media only screen and (max-width: 992px) {
+  .parrafohornocal p {
+    font-size: 20px;
+    padding-top: 0; }
+  .titulohornocal {
+    font-size: 2rem;
+    padding-top: 0; }
+  .imghornocal {
+    padding-top: 0; }
+  #dropdownCenterBtn {
+    display: none; } }

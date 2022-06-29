@@ -31,3 +31,14 @@ $blanco: white;
 .modal-content img{
   box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
 }  
+.dropdown-toggle{
+  border-radius: 0;
+}
+#dropdownCenterBtn{
+  font-family: $fontsecundaria;
+  font-size: 1.5rem;
+}
+#pedia{
+  font-family: $fontsecundaria;
+  font-size: 18px;
+}
