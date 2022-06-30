@@ -132,7 +132,7 @@
 
 @media only screen and (max-width: 576px) {
   .filmquiensoy, .fotosquiensoy, .fotosgaleria, .fotosfilm, .filmgaleria, .filmfilm {
-    font-size: 0.5rem; } }
+    font-size: 1rem; } }
 
 .filmquiensoy:hover, .fotosquiensoy:hover, .fotosgaleria:hover, .fotosfilm:hover, .filmgaleria:hover, .filmfilm:hover {
   color: gray; }
@@ -142,7 +142,7 @@
   color: white;
   font-family: "Caudex", serif;
   list-style: none;
-  font-size: 3rem;
+  font-size: 6rem;
   line-height: 120px;
   font-weight: 500px;
   border-color: transparent;
@@ -151,7 +151,7 @@
 
 @media only screen and (max-width: 576px) {
   .nombrequiensoy, .nombregaleria, .nombrefilm {
-    font-size: 2rem;
+    font-size: 4rem;
     line-height: 150px; } }
 
 .nombrequiensoy:hover, .nombregaleria:hover, .nombrefilm:hover {

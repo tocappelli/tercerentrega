@@ -31,7 +31,7 @@ $blanco: white;
 }
 @media only screen and (max-width: 576px){//modifiqué los breakpoint para estar acorde a los breakpoints de Bootstrap https://getbootstrap.com/docs/5.0/layout/breakpoints/
   .filmquiensoy {
-    font-size: 0.5rem;
+    font-size: 1rem;
     
     }
 }
@@ -43,7 +43,7 @@ text-decoration: none;
 color: $blanco;
 font-family: $fontsecundaria;
 list-style: none;
-font-size: 3rem;
+font-size: 6rem;
 line-height: 120px;
 font-weight: 500px;
 border-color: transparent;
@@ -52,7 +52,7 @@ text-align: center;
 }
 @media only screen and (max-width: 576px){//modifiqué los breakpoint para estar acorde a los breakpoints de Bootstrap https://getbootstrap.com/docs/5.0/layout/breakpoints/
   .nombrequiensoy{
-    font-size: 2rem;
+    font-size: 4rem;
     line-height: 150px;
     }
 }
