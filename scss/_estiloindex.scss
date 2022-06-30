@@ -7,7 +7,7 @@ $negro: #040404;
 $blanco: white;
 
 .bodyindex{
-  background-image: url(../img/fondo.jpg);
+  background-image: url(../img/fondocontacto2.jpg);
   position: fixed;
   top:0;
 }
@@ -32,11 +32,7 @@ $blanco: white;
   background: $fondotransparente;
   
 }
-@media only screen and (max-width: 600px){
-  .offcanvas{
-    background-color: $negro;
-    }
-}
+
 
 .logo{
   display: grid;
@@ -51,6 +47,11 @@ $blanco: white;
   grid-column: 1/4;
   grid-row: 2;
 }
+.logo a{
+  text-decoration: none;
+  display: grid;
+  grid-row: 2;
+}
 .elojoabrevidado{
   font-family: $fontprincipal;
   font-size: 8rem;
@@ -60,27 +61,26 @@ $blanco: white;
   grid-row: 3;
   display: none;
 }
-@media only screen and (max-width: 1350px){
-  .elojo {
-    font-size: 7rem;
-    grid-row: 4;
-    
-    
-  }
+.offcanvas-header h5{
+  font-size: 5rem;
+  color: $blanco;
+  font-family: $fontsecundaria;
+}
+.nav-link{
+  color: $blanco;
+  font-family: $fontsecundaria;
+  font-size: 3rem;
+}
+.dropdown-menu{
+  background: $fondotransparente;
+}
+.dropdown-item{
+  font-size: 1.5rem;
+  font-family: $fontprincipal;
+  color: $blanco;
 }
 
-@media only screen and (max-width: 600px){
-  .elojo{
-    font-size: 3rem;
-    grid-column: 1;
-    grid-row: 7;
-    display: none;
-    
-  }
-  .elojoabrevidado{
-    display: inline;
-  }
-}
+
 
 /*animaciones logo index*/
 .focus-in-expand {
@@ -114,21 +114,36 @@ $blanco: white;
   }
 }
 
-.offcanvas-header h5{
-  font-size: 5rem;
-  color: $blanco;
-  font-family: $fontsecundaria;
+
+/*media query*/
+
+@media only screen and (max-width: 576px){
+  .offcanvas{
+    background-color: $negro;
+    }
 }
-.nav-link{
-  color: $blanco;
-  font-family: $fontsecundaria;
-  font-size: 3rem;
+@media only screen and (max-width: 992px){
+  .elojo {
+    font-size:  7rem;
+    grid-row: 4;
+    
+    
+  }
 }
-.dropdown-menu{
-  background: $fondotransparente;
+@media only screen and (max-width: 1400px){
+  .elojo {
+    font-size:  8rem;
+    }
 }
-.dropdown-item{
-  font-size: 1.5rem;
-  font-family: $fontprincipal;
-  color: $blanco;
+@media only screen and (max-width: 576px){
+  .elojo{
+    font-size: 3rem;
+    grid-column: 1;
+    grid-row: 7;
+    display: none;
+    
+  }
+  .elojoabrevidado{
+    display: inline;
+  }
 }

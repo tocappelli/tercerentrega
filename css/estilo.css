@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant:wght@300&family=Julius+Sans+One&family=Poppins:wght@500&display=swap");
 .bodyindex {
-  background-image: url(../img/fondo.jpg);
+  background-image: url(../img/fondocontacto2.jpg);
   position: fixed;
   top: 0; }
 
@@ -23,10 +23,6 @@
 .offcanvas {
   background: linear-gradient(rgba(5, 7, 12, 0.2), rgba(5, 7, 12, 0.2)); }
 
-@media only screen and (max-width: 600px) {
-  .offcanvas {
-    background-color: #040404; } }
-
 .logo {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -40,6 +36,11 @@
   grid-column: 1/4;
   grid-row: 2; }
 
+.logo a {
+  text-decoration: none;
+  display: grid;
+  grid-row: 2; }
+
 .elojoabrevidado {
   font-family: "Bebas Neue", cursive;
   font-size: 8rem;
@@ -49,19 +50,23 @@
   grid-row: 3;
   display: none; }
 
-@media only screen and (max-width: 1350px) {
-  .elojo {
-    font-size: 7rem;
-    grid-row: 4; } }
+.offcanvas-header h5 {
+  font-size: 5rem;
+  color: white;
+  font-family: "Caudex", serif; }
 
-@media only screen and (max-width: 600px) {
-  .elojo {
-    font-size: 3rem;
-    grid-column: 1;
-    grid-row: 7;
-    display: none; }
-  .elojoabrevidado {
-    display: inline; } }
+.nav-link {
+  color: white;
+  font-family: "Caudex", serif;
+  font-size: 3rem; }
+
+.dropdown-menu {
+  background: linear-gradient(rgba(5, 7, 12, 0.2), rgba(5, 7, 12, 0.2)); }
+
+.dropdown-item {
+  font-size: 1.5rem;
+  font-family: "Bebas Neue", cursive;
+  color: white; }
 
 /*animaciones logo index*/
 .focus-in-expand {
@@ -90,23 +95,28 @@
     filter: blur(0px);
     opacity: 1; } }
 
-.offcanvas-header h5 {
-  font-size: 5rem;
-  color: white;
-  font-family: "Caudex", serif; }
+/*media query*/
+@media only screen and (max-width: 576px) {
+  .offcanvas {
+    background-color: #040404; } }
 
-.nav-link {
-  color: white;
-  font-family: "Caudex", serif;
-  font-size: 3rem; }
+@media only screen and (max-width: 992px) {
+  .elojo {
+    font-size: 7rem;
+    grid-row: 4; } }
 
-.dropdown-menu {
-  background: linear-gradient(rgba(5, 7, 12, 0.2), rgba(5, 7, 12, 0.2)); }
+@media only screen and (max-width: 1400px) {
+  .elojo {
+    font-size: 8rem; } }
 
-.dropdown-item {
-  font-size: 1.5rem;
-  font-family: "Bebas Neue", cursive;
-  color: white; }
+@media only screen and (max-width: 576px) {
+  .elojo {
+    font-size: 3rem;
+    grid-column: 1;
+    grid-row: 7;
+    display: none; }
+  .elojoabrevidado {
+    display: inline; } }
 
 .bodyquiensoy {
   background-color: #161616; }
@@ -116,7 +126,7 @@
   color: white;
   font-family: "Caudex", serif;
   list-style: none;
-  font-size: 1rem;
+  font-size: 2rem;
   line-height: 120px;
   opacity: 50%; }
 
