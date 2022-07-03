@@ -6,3 +6,12 @@
 @import "estilocontacto";
 @import "estilohornocal";
 @import "estilocarnaval";
+
+ /*navbar oculto*/
+ .navbaroculto{
+  visibility: collapse;
+}
+.offcanvasoculto{
+  background-image: url(../img/fondocontacto2.jpg);
+}
+/* fin del navbar oculto*/

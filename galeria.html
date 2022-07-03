@@ -7,7 +7,7 @@
     <meta name="description" content="Las mejores fotos de la LA COMADREJA.  Tomas Cappelli nacido en Buenos Aires Argentina expone sus obras fotográficas. Fotos de paisaje- Fotos Urbanas- Fotos de Bandas- Fotos Artísticas - © Copyright Tomas Cappelli">
     <meta name="keywords"  content="Fotografía, fotógrafo de paisaje, fotógrafo de deportes, fotógrafo de bandas, fotógrafo de bandas en buenos aires,  fotógrafo urbano buenos aires, fotografía artística, mejores fotógrafos de argentina, fotógrafos argentinos, fotografía en buenos aires, fotógrafo de paisaje en argentina, fotos de argentina, fotos de paisaje en argentina, odc quién soy">
     <!--Titulo-->
-    <title>ODC / Galeria de Fotos</title>
+    <title>ODC / Galería de Fotos</title>
     <!-- Link Bootsrtrap hoja de estilos-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!--hoja de estilos propia-->
@@ -25,7 +25,7 @@
     <header>
       <div class="titulo d-flex justify-content-around">
         <a class="filmgaleria" href="film.html">FILMS</a>
-        <a class="nombregaleria animate__animated animate__flipInX" href="index.html">ODC/</a>
+        <a class="nombregaleria animate__animated animate__flipInX" href="navbar-toggler bg-white animate__animated animate__bounceInLeft" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">ODC/  </a>
         <a class="fotosgaleria" href="galeria.html">FOTOS</a>
       </div>
       <div class="dropdown text-center">
@@ -37,7 +37,46 @@
           <li><a class="dropdown-item" id="pedia" href="carnaval.html">CARNAVAL-TILCARA</a></li>
         </ul>
       </div>
-      
+      <!--navbar del index oculto-->
+  <nav class="navbar fixed-top bg-withe navbaroculto ">
+    <div class="container-fluid d-flex justify-content-end rounded-pill bg-withe">
+      <button class="navbar-toggler bg-white animate__animated animate__bounceInLeft" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvasoculto offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <a class="odcnav" href="index.html">ODC/</a>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body text-white">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="quiensoy.html">Quién Soy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Porfolio
+              </a>
+              <ul class="dropdown-menu"  aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="galeria.html">FOTOS</a></li>
+                <li><a class="dropdown-item" href="film.html">SHORT FILM</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item " href="https://www.instagram.com/odcfotos/"target="_blank">INSTAGRAM</a></li>
+                <li><a class="dropdown-item" href="https://www.behance.net/tomascappelli/" target="_blank">BEHANCE</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--Fin del Navbar oculto-->
       
     </header>
 

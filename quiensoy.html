@@ -25,9 +25,50 @@
     <header>
     <div class="titulo d-flex justify-content-around ">
       <a class="filmquiensoy " href="film.html">FILMS</a>
-      <a class="nombrequiensoy animate__animated animate__flipInX" href="index.html">ODC/</a>
+      <a class="nombrequiensoy animate__animated animate__flipInX " href="navbar-toggler bg-white animate__animated animate__bounceInLeft" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">ODC/</a>
       <a class="fotosquiensoy" href="galeria.html">FOTOS</a>
     </div>
+  <!--navbar del index oculto-->
+  <nav class="navbar fixed-top bg-withe navbaroculto  ">
+    <div class="container-fluid d-flex justify-content-end rounded-pill bg-withe">
+      <button class="navbar-toggler bg-white animate__animated animate__bounceInLeft" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvasoculto offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <a class="odcnav" href="index.html">ODC/</a>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body text-white">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="quiensoy.html">Quién Soy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Porfolio
+              </a>
+              <ul class="dropdown-menu"  aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="galeria.html">FOTOS</a></li>
+                <li><a class="dropdown-item" href="film.html">SHORT FILM</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item " href="https://www.instagram.com/odcfotos/"target="_blank">INSTAGRAM</a></li>
+                <li><a class="dropdown-item" href="https://www.behance.net/tomascappelli/" target="_blank">BEHANCE</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--Fin del Navbar oculto-->
+
   </header>
    <main>
     <div class="container">
@@ -36,7 +77,7 @@
           <h1 class="text-center text-white"><em>Quién Soy? O quien voy siendo…</em></h1><br>
           <p class="text-start"> <em class="text-white"> La Comadreja</em> más conocido como Tomas Cappelli  nació en Buenos Aires en 1985. Comenzó a tomar fotografías y realizar proyectos para sus amigos en 2003. Después de haber vivido unos años en Barcelona junto a Nayby y Carlos Mendez , familiares  y también artistas, Tomas decide  potenciar el lado creativo haciendo de la fotografía una forma de expresión. </p>
           <p class="text-start">Apasionado por la música, el cine, el deporte y la naturaleza  las “obras” de Tomas no son más que momentos de su vida al cual decide dejar inmortalizados para siempre. Curioso de todas las culturas y costumbres e influenciado por el informalismo,  sus fotos intentan mostrar lo que va sucediendo  a su alrededor.</p>
-          <p class="text-start"> El Ojo de la Comadreja  es el lugar donde Tomas expone  y también dará lugar a compartir el Arte de otras personas con el fin de crear una gran comunidad.</p>
+          <p class="text-start"> El Ojo de la Comadreja es un espacio donde Tomas expone sus trabajos y también da lugar a compartir el Arte de otras personas con el fin de crear una gran comunidad.</p>
         </div>
         <div class="col-4 parrafoquiensoy text-end p-3" >
           <img src="./img/fotoqsoy.jpg" alt="foto de tomas cappelli">

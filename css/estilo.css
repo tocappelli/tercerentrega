@@ -252,7 +252,7 @@
   font-size: 18px; }
 
 .bodyfilm {
-  background-color: black; }
+  background-color: #161616; }
 
 .containier img {
   box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px; }
@@ -429,3 +429,12 @@ ul {
     opacity: 0.6; }
   100% {
     opacity: 1; } }
+
+/*navbar oculto*/
+.navbaroculto {
+  visibility: collapse; }
+
+.offcanvasoculto {
+  background-image: url(../img/fondocontacto2.jpg); }
+
+/* fin del navbar oculto*/
